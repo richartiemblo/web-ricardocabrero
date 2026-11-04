@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Richar · Vender en Amazon con IA, sin humo</title>
+<meta name="description" content="Vendo en Amazon desde 2014. Únete gratis a AMZ House, mi comunidad para aprender a vender en Amazon con la IA dentro del método.">
+<meta name="theme-color" content="#000000">
+<link rel="canonical" href="https://ricardocabrero.com/">
+<link rel="icon" href="recursos/logo-amz-house.png">
+<link rel="apple-touch-icon" href="recursos/logo-amz-house.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Richar · Vender en Amazon con IA, sin humo">
+<meta property="og:description" content="Vendo en Amazon desde 2014. Únete gratis a AMZ House, mi comunidad para aprender a vender en Amazon con la IA dentro del método.">
+<meta property="og:url" content="https://ricardocabrero.com/">
+<meta property="og:image" content="https://ricardocabrero.com/recursos/compartir.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="recursos/montserrat-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Marca";src:url("recursos/montserrat-latin.woff2") format("woff2");font-weight:100 900;font-display:swap}
+:root{--fondo:#000000;--tarjeta:#1A1A1A;--principal:#FFB800;--p:255,184,0;--acento:#E60000;--a:230,0,0;--texto:#FFFFFF;--suave:#B8B8B8;--sobre-principal:#000000;--borde:#262626;--ancho:1080px;--lado:20px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--fondo);scroll-behavior:smooth}
+body{min-height:100vh;overflow-x:hidden;color:var(--texto);background:var(--fondo);font-family:"Marca",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:inherit}
+img{display:block;max-width:100%}
+.ico{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+:focus-visible{outline:2px solid var(--principal);outline-offset:3px}
+
+/* Portada */
+.portada{position:relative;isolation:isolate;overflow:hidden;background:var(--fondo)}
+.portada::before{content:"";position:absolute;inset:0;z-index:2;pointer-events:none;opacity:.1;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.logo-cabecera{position:absolute;z-index:4;top:calc(14px + env(safe-area-inset-top));left:var(--lado);width:68px;height:auto;filter:drop-shadow(0 4px 14px rgba(0,0,0,.7))}
+.portada-foto{position:relative;height:min(56svh,540px);overflow:hidden}
+.portada-foto img{width:100%;height:100%;object-fit:cover;object-position:50% 16%;animation:acercar 16s cubic-bezier(.2,.6,.3,1) both;will-change:translate}
+.portada-foto::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35) 0%,transparent 22%,transparent 46%,rgba(0,0,0,.82) 76%,var(--fondo) 100%)}
+.portada-texto{position:relative;z-index:3;max-width:620px;margin:-104px auto 0;padding:0 var(--lado) 44px}
+.portada:not(.con-foto) .portada-texto{margin-top:0;padding-top:120px;text-align:center}
+.antetitulo{display:inline-flex;align-items:center;gap:10px;margin-bottom:14px;color:var(--principal);font-size:12px;font-weight:800;letter-spacing:.22em;text-transform:uppercase}
+.antetitulo::before{content:"";width:26px;height:3px;border-radius:2px;background:var(--acento)}
+h1{font-size:clamp(34px,9.4vw,68px);font-weight:900;line-height:.96;letter-spacing:.005em;text-transform:uppercase;text-shadow:0 0 28px rgba(var(--p),.45),0 2px 0 rgba(0,0,0,.4)}
+h1 span{display:block;margin-top:12px;color:var(--principal);font-size:clamp(19px,5.2vw,28px);font-weight:700;line-height:1.22;letter-spacing:0;text-transform:none;text-shadow:0 0 22px rgba(var(--p),.35)}
+.entradilla{margin:12px 0 22px;color:var(--suave);font-size:16px;line-height:1.55}
+
+/* Botón principal */
+.cta{position:relative;overflow:hidden;isolation:isolate;display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:62px;padding:16px 18px;border-radius:14px;background:var(--principal);color:var(--sobre-principal);font-size:clamp(15px,4.2vw,18px);font-weight:900;letter-spacing:.02em;line-height:1.15;text-align:center;text-transform:uppercase;text-decoration:none;animation:latido 2.8s ease-in-out infinite;transition:transform .15s}
+.cta::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(105deg,transparent 30%,rgba(255,255,255,.6) 50%,transparent 70%);transform:translateX(-130%);animation:brillo 3.8s ease-in-out 1.4s infinite}
+.cta:active{transform:scale(.98)}
+.cta-flecha{flex:none;width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round;transition:transform .2s}
+.cta:hover .cta-flecha,.barra a:hover .cta-flecha{transform:translateX(4px)}
+.cta.pendiente{background:transparent;color:var(--texto);border:1.5px dashed rgba(var(--p),.6);animation:none;flex-direction:column;gap:6px}
+.cta.pendiente::after,.cta.pendiente .cta-flecha{display:none}
+.cta-nota{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 18px;margin-top:12px;color:var(--suave);font-size:13px;font-weight:600}
+.cta-nota span{display:inline-flex;align-items:center;gap:6px}
+.cta-nota .ico{width:16px;height:16px;color:var(--principal);stroke-width:2.4}
+.sello{display:inline-block;padding:3px 10px;border-radius:99px;background:var(--acento);color:#fff;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+
+/* Cifras */
+.cifras{display:grid;grid-template-columns:repeat(2,1fr);max-width:var(--ancho);margin:0 auto;border-block:1px solid #1d1d1d}
+.cifra{padding:26px 14px;text-align:center}
+.cifra:nth-child(odd){border-right:1px solid #1d1d1d}
+.cifra:nth-child(n+3){border-top:1px solid #1d1d1d}
+.cifra b{display:block;color:var(--principal);font-size:48px;font-weight:900;line-height:1;font-variant-numeric:tabular-nums;text-shadow:0 0 26px rgba(var(--p),.45)}
+.cifra span{display:block;max-width:150px;margin:8px auto 0;color:var(--suave);font-size:12px;font-weight:700;letter-spacing:.08em;line-height:1.35;text-transform:uppercase}
+
+/* Secciones */
+.seccion{max-width:var(--ancho);margin:0 auto;padding:76px var(--lado) 8px}
+h2{font-size:clamp(30px,7.6vw,46px);font-weight:900;line-height:1;letter-spacing:.01em;text-transform:uppercase}
+h2::after{content:"";display:block;width:54px;height:4px;margin-top:16px;border-radius:2px;background:var(--acento);box-shadow:0 0 18px rgba(var(--a),.6)}
+.tarjetas{display:grid;gap:12px;margin-top:30px}
+.tarjeta{display:grid;grid-template-columns:48px 1fr;gap:2px 16px;align-items:start;padding:20px;border:1px solid var(--borde);border-radius:18px;background:linear-gradient(160deg,#1c1c1c,#111);transition:border-color .25s,transform .25s}
+.tarjeta:hover{border-color:rgba(var(--p),.55);transform:translateY(-3px)}
+.tarjeta-ico{grid-row:span 2;display:grid;place-items:center;width:48px;height:48px;border-radius:13px;background:rgba(var(--p),.12);color:var(--principal)}
+.tarjeta b{display:block;font-size:18px;font-weight:800;line-height:1.25}
+.tarjeta p{margin-top:4px;color:var(--suave);font-size:15px}
+.filtro{display:grid;gap:12px;margin-top:22px}
+.filtro p{display:flex;gap:12px;align-items:flex-start;padding:18px 20px;border-radius:14px;background:#0d0d0d;font-size:16px;font-weight:600;line-height:1.45}
+.filtro .ico{flex:none;margin-top:1px;stroke-width:2.6}
+.filtro .no{border-left:3px solid var(--acento)}
+.filtro .no .ico{color:var(--acento)}
+.filtro .si{border-left:3px solid var(--principal)}
+.filtro .si .ico{color:var(--principal)}
+.lema{margin-top:40px;color:var(--principal);font-size:clamp(24px,6.4vw,36px);font-weight:900;font-style:italic;line-height:1.15;text-align:center;text-transform:uppercase;text-shadow:0 0 30px rgba(var(--p),.5)}
+
+/* Historia */
+.historia-cabecera{display:grid;gap:30px}
+.historia-foto{position:relative;aspect-ratio:6/5;border-radius:22px;overflow:hidden;box-shadow:0 30px 80px -30px rgba(var(--p),.55)}
+.historia-foto img{width:100%;height:100%;object-fit:cover}
+.historia-foto::after{content:"";position:absolute;inset:0;border:1px solid rgba(255,255,255,.08);border-radius:inherit}
+.historia-texto{margin-top:22px}
+.historia-texto p{margin-bottom:12px;color:#dcdcdc;font-size:17px;line-height:1.6}
+.historia-texto p:first-child{color:var(--texto);font-size:19px;font-weight:700}
+.linea{position:relative;max-width:760px;margin:44px auto 0;padding-left:34px;list-style:none}
+.linea::before{content:"";position:absolute;top:6px;bottom:18px;left:8px;width:2px;background:linear-gradient(var(--principal),var(--acento) 70%,transparent)}
+.linea li{position:relative;padding-bottom:28px}
+.linea li::before{content:"";position:absolute;top:3px;left:-34px;width:18px;height:18px;border:3px solid var(--principal);border-radius:50%;background:var(--fondo);transition:background .5s .2s,box-shadow .5s .2s}
+.linea li.visto::before{background:var(--principal);box-shadow:0 0 0 5px rgba(var(--p),.15),0 0 22px rgba(var(--p),.8)}
+.cuando{display:block;color:var(--principal);font-size:13px;font-weight:900;letter-spacing:.16em;text-transform:uppercase}
+.linea p{margin-top:4px;color:#e2e2e2;font-size:16px;line-height:1.55}
+.cita{max-width:760px;margin:20px auto 0;padding:28px 26px;border:1px solid rgba(var(--a),.45);border-radius:20px;background:radial-gradient(120% 140% at 0% 0%,rgba(var(--a),.24),transparent 60%),#0c0c0c}
+.cita p{font-size:20px;font-weight:700;line-height:1.4}
+.cita cite{display:block;margin-top:14px;color:var(--principal);font-size:14px;font-style:normal;font-weight:900;letter-spacing:.1em;text-transform:uppercase}
+
+/* Galería */
+.galeria{padding-top:70px}
+.tira{display:flex;gap:12px;padding:0 var(--lado);overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.tira::-webkit-scrollbar{display:none}
+.tira figure{flex:0 0 70%;aspect-ratio:4/5;border-radius:18px;overflow:hidden;scroll-snap-align:center;background:#111}
+.tira img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.tira figure:hover img{transform:scale(1.05)}
+.galeria-cabecera{max-width:var(--ancho);margin:0 auto 28px;padding:0 var(--lado)}
+.galeria.horizontal .tira figure{flex-basis:86%;aspect-ratio:3/2}
+.galeria-pie{max-width:var(--ancho);margin:18px auto 0;padding:0 var(--lado);color:var(--suave);font-size:15px;font-style:italic;text-align:center}
+
+/* Opciones */
+.opciones{display:grid;gap:12px;margin-top:30px}
+.opcion{display:flex;align-items:center;gap:16px;padding:18px;border:1px solid var(--borde);border-radius:16px;background:var(--tarjeta);text-decoration:none;transition:border-color .25s,transform .25s,background .25s}
+a.opcion:hover{border-color:rgba(var(--p),.7);background:#1f1f1f;transform:translateY(-2px)}
+.opcion-ico{flex:none;display:grid;place-items:center;width:50px;height:50px;border-radius:14px;background:rgba(var(--p),.12);color:var(--principal)}
+.opcion-txt{flex:1;min-width:0}
+.opcion-txt b{display:block;font-size:16px;font-weight:800;line-height:1.3}
+.opcion-txt small{display:block;margin-top:3px;color:var(--suave);font-size:14px;line-height:1.4}
+.opcion .sello{margin-bottom:6px;padding:2px 8px;font-size:10px}
+.flecha{flex:none;width:20px;height:20px;fill:none;stroke:#777;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:transform .2s,stroke .2s}
+a.opcion:hover .flecha{transform:translateX(3px);stroke:var(--principal)}
+.opcion.pendiente{border-style:dashed}
+.opcion.pendiente b,.opcion.pendiente small,.opcion.pendiente .opcion-ico{opacity:.6}
+
+/* Cierre y pie */
+.cierre{max-width:620px;margin:0 auto;padding:96px var(--lado) 30px;text-align:center;background:radial-gradient(60% 50% at 50% 70%,rgba(var(--p),.16),transparent 70%)}
+.cierre h2::after{margin-inline:auto}
+.lineas{margin:26px 0 30px;font-size:19px;font-weight:700;line-height:1.5}
+.lineas span{display:block;color:var(--suave)}
+.lineas span:last-child{margin-top:8px;color:var(--principal);font-size:24px;font-weight:900;text-transform:uppercase;text-shadow:0 0 24px rgba(var(--p),.5)}
+.redes{display:flex;justify-content:center;gap:12px;margin-top:34px}
+.redes a{display:grid;place-items:center;width:50px;height:50px;border:1px solid #333;border-radius:50%;color:var(--principal);transition:border-color .2s,transform .2s}
+.redes a:hover{border-color:var(--principal);transform:translateY(-2px)}
+footer{padding:40px var(--lado) calc(40px + env(safe-area-inset-bottom));color:#777;font-size:12px;line-height:1.9;text-align:center}
+footer img{width:72px;height:auto;margin:0 auto 10px;opacity:.9}
+.pie-marca{max-width:330px;margin:0 auto 14px;color:var(--suave);font-size:14px;line-height:1.5}
+footer a{color:#9a9a9a}
+
+/* Barra fija con el botón principal: aparece cuando no se ve ninguno de los otros dos */
+.barra{position:fixed;inset:auto 0 0;z-index:50;padding:14px 14px calc(12px + env(safe-area-inset-bottom));background:linear-gradient(transparent,rgba(0,0,0,.94) 38%);transform:translateY(110%);visibility:hidden;transition:transform .35s cubic-bezier(.2,.7,.2,1),visibility .35s}
+.barra.activa{transform:none;visibility:visible}
+.barra a{display:flex;align-items:center;justify-content:center;gap:10px;max-width:460px;min-height:54px;margin:0 auto;border-radius:13px;background:var(--principal);color:var(--sobre-principal);font-size:15px;font-weight:900;letter-spacing:.05em;text-transform:uppercase;text-decoration:none;box-shadow:0 10px 30px -8px rgba(var(--p),.8)}
+
+/* Aparecer al bajar (solo con JavaScript; sin él, todo se ve) */
+.js .revela{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.js .revela.visto{opacity:1;transform:none}
+.js .tarjetas .revela:nth-child(2),.js .opciones .revela:nth-child(2){transition-delay:.08s}
+.js .tarjetas .revela:nth-child(3),.js .opciones .revela:nth-child(3){transition-delay:.16s}
+.js .tarjetas .revela:nth-child(4),.js .opciones .revela:nth-child(4){transition-delay:.24s}
+
+@keyframes acercar{from{scale:1.14}to{scale:1.02}}
+@keyframes latido{0%,100%{box-shadow:0 0 0 1px rgba(var(--p),.4),0 12px 34px -12px rgba(var(--p),.6)}50%{box-shadow:0 0 0 1px rgba(var(--p),.65),0 14px 50px -6px rgba(var(--p),.9)}}
+@keyframes brillo{0%{transform:translateX(-130%)}40%,100%{transform:translateX(130%)}}
+
+@media (min-width:700px){
+  :root{--lado:32px}
+  .tarjetas{grid-template-columns:repeat(2,1fr)}
+  .filtro,.opciones{grid-template-columns:repeat(2,1fr)}
+  .cifras{grid-template-columns:repeat(4,1fr)}
+  .cifra{border-top:0!important;border-right:1px solid #1d1d1d}
+  .cifra:last-child{border-right:0}
+  .tira figure{flex-basis:40%}
+  .galeria.horizontal .tira figure{flex-basis:62%}
+}
+@media (min-width:980px){
+  .portada.con-foto{min-height:min(100svh,880px);display:flex;align-items:center}
+  .portada-foto{position:absolute;top:0;right:0;width:56%;height:100%}
+  .portada-foto img{object-position:50% 25%}
+  .portada-foto{-webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.25) 14%,rgba(0,0,0,.7) 30%,#000 50%);mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.25) 14%,rgba(0,0,0,.7) 30%,#000 50%)}
+  .portada-foto::after{background:linear-gradient(180deg,transparent 70%,var(--fondo) 100%)}
+  .portada-texto{width:100%;max-width:var(--ancho);margin:0 auto;padding:120px var(--lado) 90px}
+  .portada.con-foto .portada-texto>*{max-width:540px}
+  .logo-cabecera{left:max(var(--lado),calc((100vw - var(--ancho))/2 + var(--lado)));width:84px;top:28px}
+  .portada.con-foto .cta-caja{max-width:440px}
+  .portada.con-foto .cta-nota{justify-content:flex-start}
+  .tarjetas{grid-template-columns:repeat(4,1fr)}
+  .tarjeta{display:block;padding:24px}
+  .tarjeta-ico{margin-bottom:18px}
+  .tarjeta p{margin-top:8px}
+  .historia-cabecera{grid-template-columns:.95fr 1.05fr;align-items:center;gap:56px}
+  .tira{max-width:var(--ancho);margin:0 auto;overflow:visible}
+  .tira figure{flex:1 1 0}
+  .galeria.horizontal .tira{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .galeria.horizontal.de-tres .tira{grid-template-columns:2fr 1fr}
+  .galeria.horizontal.de-tres .tira figure:first-child{grid-row:span 2;aspect-ratio:auto}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js .revela{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<header class="portada con-foto"><img class="logo-cabecera" src="recursos/logo-amz-house.png" alt="AMZ House"><div class="portada-foto"><img src="recursos/portada.jpg" alt="Richar, de brazos cruzados, con una luz naranja detrás" fetchpriority="high" decoding="async"></div><div class="portada-texto"><p class="antetitulo">Richar · AMZ House</p><h1>Vendo en Amazon desde 2014.<span>Te enseño lo que hago, no lo que leo.</span></h1><p class="entradilla">Mi comunidad gratis para aprender a vender en Amazon, con la IA dentro del método. Sin humo.</p><div class="cta-caja cta-vigilar"><a class="cta" href="https://www.skool.com/amz-house-5008/about"><span class="cta-texto">Únete gratis a AMZ House</span><svg class="cta-flecha" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="M13 18l6 -6"/><path d="M13 6l6 6"/></svg></a><p class="cta-nota"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5l10 -10"/></svg>Gratis</span><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5l10 -10"/></svg>Apúntate ya: abrimos muy pronto</span></p></div></div></header>
+<main>
+<section class="cifras revela" aria-label="Cifras"><div class="cifra"><b data-valor="12" data-desde="2014">12</b><span>años vendiendo en Amazon</span></div><div class="cifra"><b data-valor="18" data-desde="2008">18</b><span>años como empresario</span></div><div class="cifra"><b data-valor="50">50</b><span>empleados en mi negocio físico</span></div><div class="cifra"><b data-valor="3">3</b><span>eventos presenciales organizados</span></div></section>
+<section class="seccion"><p class="antetitulo">AMZ House</p><h2>Qué te llevas dentro</h2><div class="tarjetas"><div class="tarjeta revela"><span class="tarjeta-ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7l6 -3l6 3l6 -3v13l-6 3l-6 -3l-6 3v-13"/><path d="M9 4v13"/><path d="M15 7v13"/></svg></span><b>El método real, paso a paso</b><p>Para construir tu negocio en Amazon, aunque empieces de cero.</p></div><div class="tarjeta revela"><span class="tarjeta-ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 3v7h6l-8 11v-7h-6l8 -11"/></svg></span><b>La IA dentro del método</b><p>Lo que antes te llevaba 3 horas, en 10 minutos.</p></div><div class="tarjeta revela"><span class="tarjeta-ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 9v4"/><path d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0z"/><path d="M12 16h.01"/></svg></span><b>Mis errores, para que no los pagues</b><p>Los que me costaron dinero, contados tal cual.</p></div><div class="tarjeta revela"><span class="tarjeta-ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="7" r="4"/><path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/><path d="M21 21v-2a4 4 0 0 0 -3 -3.85"/></svg></span><b>Gente que ejecuta</b><p>No coleccionistas de cursos. Gente que hace.</p></div></div><div class="filtro revela"><p class="no"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6l-12 12"/><path d="M6 6l12 12"/></svg><span>No es para ti si buscas un botón mágico.</span></p><p class="si"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5l10 -10"/></svg><span>Es para ti si quieres construir algo de verdad, aunque empieces de cero.</span></p></div><p class="lema revela">El esfuerzo no se negocia.</p></section>
+<section class="seccion historia"><div class="historia-cabecera"><div class="historia-foto revela"><img src="recursos/sobre-mi.jpg" alt="Richar con las manos juntas, en posición de saludo" loading="lazy" decoding="async"></div><div><p class="antetitulo">Quién está detrás</p><h2>Quién es Richar</h2><div class="historia-texto"><p>Soy Richar. Empresario desde 2008 y vendedor en Amazon desde 2014, con mis propias marcas.</p><p>No vivo de contar lo que hice hace años: sigo en activo cada día. He gestionado cuentas de inversores que facturan millones y hoy la IA trabaja en todos mis negocios.</p><p>Soy maestro de formación: lo explico para que lo entiendas a la primera.</p></div></div></div><ol class="linea"><li class="revela"><span class="cuando">2008</span><p>Monto mi primer negocio: una empresa de formación.</p></li><li class="revela"><span class="cuando">Antes de Amazon</span><p>Dirijo un negocio físico con 50 empleados. Aprendo que la complejidad te encadena y la simplicidad escala.</p></li><li class="revela"><span class="cuando">2014</span><p>Entro en Amazon con fundas de móvil: mi primer producto y mi primera marca propia.</p></li><li class="revela"><span class="cuando">2021 · 2023</span><p>Dirijo una academia de Amazon: formo al equipo comercial, hago los lanzamientos en directo y organizo 3 eventos presenciales.</p></li><li class="revela"><span class="cuando">2023 · 2024</span><p>Llevo dos masterminds de alto nivel.</p></li><li class="revela"><span class="cuando">Hoy</span><p>Sigo vendiendo con mis marcas, con la IA trabajando cada día. Y te enseño a hacerlo en AMZ House.</p></li></ol><blockquote class="cita revela"><p>Me he descapitalizado dos veces. Y las dos he vuelto a crecer.</p><cite>No se puede vencer a quien nunca se rinde.</cite></blockquote></section>
+<section class="galeria horizontal de-tres revela" aria-label="En el escenario, en la pizarra y a pie de calle"><div class="galeria-cabecera"><p class="antetitulo">Así enseño</p><h2>En el escenario, en la pizarra y a pie de calle</h2></div><div class="tira"><figure><img src="recursos/evento-1.jpg" alt="Richar en el escenario, delante de un cine lleno de alumnos" loading="lazy" decoding="async"></figure><figure><img src="recursos/evento-2.jpg" alt="Richar explicando en la pizarra, en una clase en grupo pequeño" loading="lazy" decoding="async"></figure><figure><img src="recursos/evento-3.jpg" alt="Richar en el centro de un corro de alumnos, en una visita a almacenes mayoristas" loading="lazy" decoding="async"></figure></div><p class="galeria-pie">Eventos con cientos de alumnos, clases en grupo pequeño y visitas a mayoristas: lo que enseño, lo he hecho antes.</p></section>
+<section class="seccion"><p class="antetitulo">Trabaja conmigo</p><h2>Más formas de trabajar conmigo</h2><nav class="opciones" aria-label="Más formas de trabajar conmigo"><a class="opcion revela" href="https://wa.me/34746043916?text=Hola%20Richar%2C%20vengo%20de%20tu%20web.%20Quiero%20informaci%C3%B3n%20sobre%20la%20asesor%C3%ADa%20para%20mi%20cuenta%20de%20Amazon."><span class="opcion-ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19h16"/><path d="M4 15l4 -6l4 2l4 -5l4 4"/></svg></span><span class="opcion-txt"><b>Asesoría para tu cuenta de Amazon</b><small>Escríbeme por WhatsApp y vemos tu caso</small></span><svg class="flecha" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="M13 18l6 -6"/><path d="M13 6l6 6"/></svg></a><a class="opcion revela" href="https://wa.me/34746043916?text=Hola%20Richar%2C%20vengo%20de%20tu%20web.%20Te%20escribo%20por%20una%20colaboraci%C3%B3n%20o%20un%20evento."><span class="opcion-ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="2" width="6" height="11" rx="3"/><path d="M5 10a7 7 0 0 0 14 0"/><path d="M8 21h8"/><path d="M12 17v4"/></svg></span><span class="opcion-txt"><b>Colaboraciones y eventos</b><small>Para marcas, empresas y organizadores</small></span><svg class="flecha" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="M13 18l6 -6"/><path d="M13 6l6 6"/></svg></a><a class="opcion revela" href="https://chat.whatsapp.com/F5Jk8Qgy9gPIKp6BcHsnVD"><span class="opcion-ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0"/><path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0"/><path d="M3 6v13"/><path d="M12 6v13"/><path d="M21 6v13"/></svg></span><span class="opcion-txt"><b>Formación de KDP</b><small>Lista de espera: entérate el primero</small></span><svg class="flecha" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="M13 18l6 -6"/><path d="M13 6l6 6"/></svg></a><a class="opcion revela" href="https://chat.whatsapp.com/F5Jk8Qgy9gPIKp6BcHsnVD"><span class="opcion-ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6"/><path d="M9 17v1a3 3 0 0 0 6 0v-1"/></svg></span><span class="opcion-txt"><b>Avisos por WhatsApp</b><small>¿Solo quieres los avisos? Entra aquí</small></span><svg class="flecha" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="M13 18l6 -6"/><path d="M13 6l6 6"/></svg></a></nav></section>
+<section class="cierre revela"><h2>¿Empezamos?</h2><p class="lineas"><span>No sabes por dónde empezar.</span><span>No tienes experiencia.</span><span>No tienes tiempo que perder.</span><span>Perfecto. Empezamos.</span></p><div class="cta-caja cta-vigilar"><a class="cta" href="https://www.skool.com/amz-house-5008/about"><span class="cta-texto">Únete gratis a AMZ House</span><svg class="cta-flecha" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="M13 18l6 -6"/><path d="M13 6l6 6"/></svg></a><p class="cta-nota"><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5l10 -10"/></svg>Gratis</span><span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5l10 -10"/></svg>Apúntate ya: abrimos muy pronto</span></p></div><div class="redes"><a href="https://www.instagram.com/ricardo.cabrero.varas/" aria-label="Instagram"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4"/><circle cx="12" cy="12" r="3"/><path d="M16.5 7.5v.01"/></svg></a><a href="https://www.tiktok.com/@ricardo.cabrero.varas" aria-label="TikTok"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917z"/></svg></a></div></section>
+</main>
+<footer><img src="recursos/logo-amz-house.png" alt="AMZ House" width="120" height="120" loading="lazy"><p class="pie-marca">Mi comunidad para aprender a vender en Amazon, con la IA dentro del método y sin humo.</p><p>© 2026 Richar · AMZ House · Esta página no usa cookies</p><p><a href="aviso-legal/">Aviso legal</a> · <a href="politica-de-privacidad/">Privacidad</a> · <a href="politica-de-cookies/">Cookies</a></p></footer>
+<div class="barra"><a href="https://www.skool.com/amz-house-5008/about">Únete gratis a AMZ House<svg class="cta-flecha" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="M13 18l6 -6"/><path d="M13 6l6 6"/></svg></a></div>
+<script>
+(function(){
+  var raiz=document.documentElement, quieto=matchMedia("(prefers-reduced-motion: reduce)").matches;
+  raiz.classList.add("js");
+  // Años «desde»: se recalculan con la fecha de quien mira la página.
+  var anio=new Date().getFullYear();
+  document.querySelectorAll("[data-desde]").forEach(function(el){el.dataset.valor=anio-(+el.dataset.desde);el.textContent=el.dataset.valor;});
+  function contar(el){
+    var fin=+el.dataset.valor; if(quieto){el.textContent=fin;return;}
+    var t0=performance.now();
+    (function paso(t){var k=Math.min(1,(t-t0)/1300);el.textContent=Math.round(fin*(1-Math.pow(1-k,3)));if(k<1)requestAnimationFrame(paso);})(t0);
+  }
+  if(!("IntersectionObserver" in window)){document.querySelectorAll(".revela").forEach(function(el){el.classList.add("visto");});return;}
+  var ver=new IntersectionObserver(function(entradas){entradas.forEach(function(en){
+    if(!en.isIntersecting)return; en.target.classList.add("visto"); ver.unobserve(en.target);
+    en.target.querySelectorAll("[data-valor]").forEach(contar);
+  });},{threshold:.18,rootMargin:"0px 0px -6% 0px"});
+  document.querySelectorAll(".revela").forEach(function(el){ver.observe(el);});
+  // Barra fija: solo cuando no se ve ningún botón principal y ya se ha bajado.
+  var barra=document.querySelector(".barra"), visibles=new Set();
+  if(barra){
+    var mirar=new IntersectionObserver(function(entradas){entradas.forEach(function(en){en.isIntersecting?visibles.add(en.target):visibles.delete(en.target);});
+      barra.classList.toggle("activa",visibles.size===0&&scrollY>window.innerHeight*.4);},{threshold:0});
+    document.querySelectorAll(".cta-vigilar").forEach(function(el){mirar.observe(el);});
+  }
+  // La foto de la portada baja más despacio que la página.
+  var foto=document.querySelector(".portada-foto img");
+  if(foto&&!quieto){var pendiente=false;addEventListener("scroll",function(){if(pendiente)return;pendiente=true;requestAnimationFrame(function(){var y=scrollY;if(y<innerHeight*1.3)foto.style.translate="0 "+(y*.28).toFixed(1)+"px";pendiente=false;});},{passive:true});}
+})();
+</script>
+</body>
+</html>
